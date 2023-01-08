@@ -1,6 +1,7 @@
 import pyautogui
 import keyboard
 a = 0
+b = 0
 creenWidth, screenHeight = pyautogui.size()
 currentMouseX, currentMouseY = pyautogui.position()
 currentMouseX, currentMouseY
@@ -20,3 +21,6 @@ while a < 2:
 for i in range(int(repet)):
   pyautogui.write(msg, interval=0.01)
   pyautogui.press('enter')
+  b = b + 1
+  if b == repet:
+    exit()
